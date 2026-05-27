@@ -1,0 +1,19 @@
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: orders
+        columns:
+          - name: order_id
+            tests:
+              - not_null
+              - unique
+          - name: customer_id
+            tests:
+              - not_null
+              - unique
+          - name: order_purchase_timestamp
+            tests:  
+              - not_null
+            
+
